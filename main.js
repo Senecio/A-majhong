@@ -14,7 +14,7 @@ app.all('/', function(req, res, next) {
     res.header("Access-Control-Allow-Headers", "X-Requested-With");
     res.header('Access-Control-Allow-Headers', 'Content-Type');
     next();
-}
+});
 
 // 监听端口
 var listenPort = process.env.LEANCLOUD_APP_PORT || 80;
